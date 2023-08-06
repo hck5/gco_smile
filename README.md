@@ -13,6 +13,7 @@ controlada para o acesso a esta aplicação...
 Devidos avisos feitos, vamos executar o Container:
 
 ###########Passo 1: Usando SO Linux #############
+
 Crie uma pasta em seu pc com o comando mkdir qualquer_nome
 Crie um arquivo com nome Dockerfile na pasta e cole o código abaixo dentro dele:
 
