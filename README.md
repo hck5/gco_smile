@@ -35,14 +35,18 @@ CMD ["/run.sh"]
 
 ###########Passo 2 #################
 
-rode os comandos abaixo estando dentro da pasta criada e com o Dockerfile criad
+rode os comandos abaixo estando dentro da pasta criada e com o Dockerfile criada
+
+docker volume create gco_smile 
+ps: cria um volume que irá salvar os dados do container de forma permanente
+
 
 docker build -t username/my-lamp-app .             
 ps: substitua o username pelo nome de seu usuário, ou por $USER
 este comando irá construir o container com as instruções e comandos do arquivo Dockerfile
 
 após, rode o container com o comando:
-docker run -d -p 80:80 -p 3306:3306 username/my-lamp-app     
+docker run --name gco_smile -v /home/hck/teste/ -d -p 80:80 -p 3306:3306 /my-lamp-app     
 ps: troque o nome username pelo inserido no comando anterior                 
 
 após isso, só acessar pelo navegador com a url:   http://127.0.0.1/index.php
