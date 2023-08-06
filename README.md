@@ -27,6 +27,7 @@ CMD ["/run.sh"]
 
 
 ###########Passo 2 #################
+
 rode os comandos abaixo estando dentro da pasta criada e com o Dockerfile criad
 
 docker build -t username/my-lamp-app .             
