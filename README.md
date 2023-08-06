@@ -18,12 +18,19 @@ Crie uma pasta em seu pc com o comando mkdir qualquer_nome
 Crie um arquivo com nome Dockerfile na pasta e cole o código abaixo dentro dele:
 
 FROM tutum/lamp:latest
+
 USER root
+
 RUN rm -fr /app && git clone https://github.com/hck5/gco_smile.git /app
+
 RUN chown -R root:root /app
+
 RUN chmod -R 777 /app
+
 EXPOSE 80 3306
+
 CMD ["/run.sh"]
+
 
 
 ###########Passo 2 #################
