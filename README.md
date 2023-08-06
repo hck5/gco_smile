@@ -46,7 +46,7 @@ ps: substitua o username pelo nome de seu usuário, ou por $USER
 este comando irá construir o container com as instruções e comandos do arquivo Dockerfile
 
 após, rode o container com o comando:
-docker run --name gco_smile -v /home/hck/teste/ -d -p 80:80 -p 3306:3306 /my-lamp-app     
+docker run --name gco_smile -v /home/hck/teste/ -d -p 80:80 -p 3306:3306 hck/my-lamp-app     
 ps: troque o nome username pelo inserido no comando anterior                 
 
 após isso, só acessar pelo navegador com a url:   http://127.0.0.1/index.php
